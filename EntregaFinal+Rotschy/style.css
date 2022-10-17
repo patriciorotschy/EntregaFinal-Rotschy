@@ -1,0 +1,16 @@
+.esconder{
+    visibility: hidden;
+}
+.alumnos{
+    visibility: hidden;
+}
+.mostrar{
+    visibility: visible;
+}
+
+.columnas{
+    column-gap: 10rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
