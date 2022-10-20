@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(){
     agregarPregunta()
 })
+
+//API Horario por Fetch
+let contenedor_hora = document.getElementById("hora");
+
+fetch("http://worldtimeapi.org/api/timezone/America/Argentina/Mendoza")
+    .then(response=>response.json())
+    .then(data => {
+        console.log(data)
+        contenedor_hora.innerHTML = "<span>Fecha y hora:"+ data.datetime +"</span>"
+        })
+
 //Datos del docente
 let nombre_docente ;
 let apellido_docente ;
